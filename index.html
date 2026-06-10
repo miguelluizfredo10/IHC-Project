@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Capturer</title>
+  </head>
+  <body>
+    <header class="header" id="home">
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">
+              <img src="img/logo-white.png" alt="logo" />
+            </a>
+          </div>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li><a href="#home">HOME</a></li>
+          <li><a href="#gallery">GALLERY</a></li>
+          <li class="nav__logo">
+            <a href="#">
+              <img src="img/logo-white.png" alt="logo" />
+            </a>
+          </li>
+          <li><a href="#about">ABOUT US</a></li>
+          <li><a href="#contact">CONTACT US</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="section__container about__container" id="about">
+      <h2 class="section__header">TEXT</h2>
+      <p class="section__description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur soccaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+
+      </p>
+      <p class="section__description">
+Aliquam neque mus sit augue ante fermentum mi.  Rutrum vulputate auctor sociosqu vestibulum id dictum pulvinar imperdiet montes nostra penatibus aenean vestibulum.
+      </p>
+      <img src="img/logo-white.png" alt="logo" />
+    </div>
+
+    <section class="section__container gallery__container">
+      <h2 class="section__header">~ GALLERY ~</h2>
+      <div class="gallery__filter" id="gallery-filter">
+        <button type="button" class="filter-btn active" data-category="all">Todos</button>
+        <button type="button" class="filter-btn" data-category="flowers">Flores</button>
+        <button type="button" class="filter-btn" data-category="plants">Plantas</button>
+        <button type="button" class="filter-btn" data-category="trees">Árvores</button>
+        <button type="button" class="filter-btn" data-category="landscapes">Paisagens</button>
+      </div>
+      <div class="gallery__grid" id="gallery">
+        <img src="img/header.jpeg" alt="gallery" data-category="landscapes" />
+        <img src="img/ecological_nook.jpeg" alt="gallery" data-category="landscapes" />
+        <img src="img/sunset-2.jpeg" alt="gallery" data-category="landscapes" />
+        <img src="img/sunset-3.jpeg" alt="gallery" data-category="landscapes" />
+        <img src="img/sunset-4.jpeg" alt="gallery" data-category="landscapes" />
+        <img src="img/flower-1.jpeg" alt="gallery" data-category="flowers" />
+        <img src="img/flower-2.jpeg" alt="gallery" data-category="flowers" />
+        <img src="img/flower-3.jpeg" alt="gallery" data-category="flowers" />
+        <img src="img/flower-4.jpeg" alt="gallery" data-category="flowers" />
+        <img src="img/flower-5.jpeg" alt="gallery" data-category="flowers" />
+        <img src="img/flower-6.jpeg" alt="gallery" data-category="flowers" />
+        <img src="img/flower-7.jpeg" alt="gallery" data-category="flowers" />
+        <img src="img/flower-8.jpeg" alt="gallery" data-category="flowers" />
+        <img src="img/flower-9.jpeg" alt="gallery" data-category="flowers" />
+        <img src="img/flower-10.jpeg" alt="gallery" data-category="flowers" />
+        <img src="img/flower-11.jpeg" alt="gallery" data-category="flowers" />
+        <img src="img/flower-12.jpeg" alt="gallery" data-category="flowers" />
+        <img src="img/flower-13.jpeg" alt="gallery" data-category="flowers" />
+        <img src="img/flower-14.jpeg" alt="gallery" data-category="flowers" />
+        <img src="img/lamp_post.jpeg" alt="gallery" data-category="plants" />
+        <img src="img/tree-1.jpeg" alt="gallery" data-category="trees" />
+        <img src="img/tree-2.jpeg" alt="gallery" data-category="trees" />
+        <img src="img/fruit-1.jpeg" alt="gallery" data-category="plants" />
+        <img src="img/fruit-2.jpeg" alt="gallery" data-category="plants" />
+        <img src="img/fruit-3.jpeg" alt="gallery" data-category="plants" />
+        <img src="img/fruit-4.jpeg" alt="gallery" data-category="plants" />
+        <img src="img/bush-1.jpeg" alt="gallery" data-category="plants" />
+        <img src="img/bush-2.jpeg" alt="gallery" data-category="plants" />
+        <img src="img/bush-3.jpeg" alt="gallery" data-category="plants" />
+        <img src="img/bush-4.jpeg" alt="gallery" data-category="plants" />
+      </div>
+
+      <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <a class="download-btn" id="download-btn" href="#" download="image.jpg" download>
+          <i class="ri-download-line"></i>
+        </a>
+        <div class="swiper lightbox-swiper">
+          <div class="swiper-wrapper">
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
+        <div class="footer__col">
+          <ul class="footer__links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#service">SERVICES</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>TEXTO</h4>
+          <p>
+            Lorem ipsum dolor sit amet, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2026 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
