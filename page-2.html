@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.1.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Web Design Mastery | Capturer</title>
+  </head>
+  <body>
+    <header id="home">
+      <nav>
+        <div class="nav__header">
+          <div class="nav__logo">
+            <a href="#">
+              <img src="img/logo-white.png" alt="logo" />
+            </a>
+          </div>
+          <button class="theme-toggle" id="theme-toggle" aria-label="Alternar modo claro/escuro">
+            <i class="ri-moon-line"></i>
+          </button>
+          <div class="nav__menu__btn" id="menu-btn">
+            <i class="ri-menu-line"></i>
+          </div>
+        </div>
+        <ul class="nav__links" id="nav-links">
+          <li class="nav__logo">
+            <a href="#">
+              <img src="img/logo-white.png" alt="logo" />
+            </a>
+          </li>
+            <li><a href="./page-1.html">MENU</a></li>
+            <li><a href="./page-2.html">GALERIA</a></li>
+            <li><a href="./page-3.html">SOBRE</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section__container gallery__container">
+      <h2 class="section__header">~ GALERIA ~</h2>
+      <div class="gallery__filter" id="gallery-filter">
+        <button type="button" class="filter-btn active" data-category="all">Todos</button>
+        <button type="button" class="filter-btn" data-category="flowers">Flores</button>
+        <button type="button" class="filter-btn" data-category="plants">Plantas</button>
+        <button type="button" class="filter-btn" data-category="trees">Árvores</button>
+        <button type="button" class="filter-btn" data-category="landscapes">Paisagens</button>
+      </div>
+      <div class="gallery__grid" id="gallery">
+        <div class="gallery__item" data-category="landscapes">
+          <img src="img/header.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Sunset Behind Construction</h3>
+            <p>Um magnífico pôr do sol capturado atrás de uma construção em andamento, criando um contraste fascinante entre a natureza e o desenvolvimento urbano.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="landscapes">
+          <img src="img/ecological_nook.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Ecological Garden View</h3>
+            <p>Uma vista panorâmica de um jardim ecológico repleto de biodiversidade e cores naturais que transmitem paz e harmonia.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="landscapes">
+          <img src="img/sunset-2.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Golden Sunset Reflection</h3>
+            <p>O reflexo dourado de um pôr do sol espetacular em águas tranquilas, capturando a serenidade do fim do dia.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="landscapes">
+          <img src="img/sunset-3.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Evening Sky Landscape</h3>
+            <p>Uma paisagem noturna com céu crepuscular repleto de tonalidades quentes que criam uma atmosfera acolhedora e envolvente.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="landscapes">
+          <img src="img/sunset-4.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Urban Sunset Silhouette</h3>
+            <p>Silhuetas urbanas recortadas contra um pôr do sol vibrante, revelando a beleza na interseção entre cidade e natureza.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="flowers">
+          <img src="img/flower-1.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Purple Morning Glories</h3>
+            <p>Flores matutinas de cor púrpura vibrante que abrem com o nascer do sol, simbolizando beleza efêmera e renovação.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="flowers">
+          <img src="img/flower-2.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Delicate White Blooms</h3>
+            <p>Flores brancas delicadas que irradiam pureza e elegância, trazendo uma sensação de calma e serenidade ao ambiente.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="flowers">
+          <img src="img/flower-3.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Red Garden Beauty</h3>
+            <p>Uma flor vermelha apaixonante no coração do jardim, celebrando a paixão e a vitalidade da natureza em seu esplendor.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="flowers">
+          <img src="img/flower-4.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Vibrant Pink Petals</h3>
+            <p>Pétalas rosa vibrantes que capturam a feminilidade e a graça, trazendo alegria e otimismo através de suas cores radiantes.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="flowers">
+          <img src="img/flower-5.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Magenta Cluster Flowers</h3>
+            <p>Um aglomerado de flores magenta que formam um espetáculo visual impressionante de cor e textura natural.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="flowers">
+          <img src="img/flower-6.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Crown of Blooms</h3>
+            <p>Uma coroa de flores magnificamente dispostas, representando a regalidade e a abundância da natureza em seu apogeu.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="flowers">
+          <img src="img/flower-7.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Pink Phlox Display</h3>
+            <p>Um exuberante display de flores Phlox rosa que criam um tapete floral de incomparável beleza e fragância.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="flowers">
+          <img src="img/flower-8.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Daisy Simplicity</h3>
+            <p>A simplicidade encantadora de uma margarida, provando que a verdadeira beleza muitas vezes encontra-se nas formas mais simples.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="plants">
+          <img src="img/lamp_post.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Night Garden Illumination</h3>
+            <p>Um jardim iluminado à noite revelando uma atmósfera mágica, onde as luzes resaltam a beleza nocturna da natureza.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="trees">
+          <img src="img/tree-1.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Forest Canopy</h3>
+            <p>O dossel verde de uma floresta densa que cria um refúgio natural de sombra e tranquilidade, pulsante de vida.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="trees">
+          <img src="img/tree-2.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Ancient Tree Branches</h3>
+            <p>Galhos retorcidos de uma árvore ancestral que contam histórias de séculos, mostrando a força e a sabedoria da natureza.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="plants">
+          <img src="img/fruit-1.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Golden Fruit Orchard</h3>
+            <p>Um pomar de frutas douradas que refletem a abundância e a generosidade da natureza em sua época de colheita.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="plants">
+          <img src="img/fruit-2.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Autumn Harvest Fruit</h3>
+            <p>Frutos de outono maduros que celebram a estação das colheitas com cores quentes e texturas naturais irresistíveis.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="plants">
+          <img src="img/fruit-3.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Orange Grove Bounty</h3>
+            <p>Uma abundância de laranjas em um pomar exuberante, representando nutrição e vitalidade oferecidas pela natureza.</p>
+          </div>
+        </div>
+        <div class="gallery__item" data-category="plants">
+          <img src="img/fruit-4.jpeg" alt="gallery" />
+          <div class="gallery__overlay">
+            <h3>Spring Berry Freshness</h3>
+            <p>Frutos frescos da primavera que trazem vitalidade e renovação, capturando a essência da estação em cores vibrantes.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="lightbox" id="lightbox">
+        <span class="close" onclick="closeLightbox()">&times;</span>
+        <a class="download-btn" id="download-btn" href="#" download="image.jpg" download>
+          <i class="ri-download-line"></i>
+        </a>
+        <div class="swiper lightbox-swiper">
+          <div class="swiper-wrapper">
+          </div>
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="photo-info"></div>
+      </div>
+    </section>
+        <div class="footer__col">
+          <ul class="footer__links">
+            <li><a href="#home">HOME</a></li>
+            <li><a href="#about">ABOUT US</a></li>
+            <li><a href="#service">SERVICES</a></li>
+            <li><a href="#contact">CONTACT US</a></li>
+          </ul>
+        </div>
+        <div class="footer__col">
+          <h4>TEXTO</h4>
+          <p>
+            Lorem ipsum dolor sit amet, sunt in culpa qui officia deserunt mollit anim id est laborum.
+          </p>
+        </div>
+      </div>
+      <div class="footer__bar">
+        Copyright © 2026 Web Design Mastery. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="photoData.js"></script>
+    <script src="main.js"></script>
+  </body>
+</html>
